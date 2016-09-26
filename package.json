@@ -1,0 +1,22 @@
+{
+  "name": "velocity-injectable-loader",
+  "version": "0.0.1",
+  "description": "velocity templates loader with ability to inject data",
+  "main": "index.js",
+  "dependencies": {
+    "loader-utils": "^0.2.16",
+    "velocity": "^0.7.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "velocity",
+    "template",
+    "webpack",
+    "loader"
+  ],
+  "author": "Arijus Šukys <argshook@gmail.com> (http://arijus.net)",
+  "license": "ISC"
+}
