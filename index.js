@@ -4,7 +4,7 @@ const loaderUtils = require('loader-utils');
 module.exports = function(source) {
   this.cacheable && this.cacheable();
 
-  const injectablesPath = loaderUtils.parseQuery(this.query).injectables || '';
+  const injectablesPath = loaderUtils.parseQuery(this.query).inject || '';
   const templateContext = require(path.resolve(injectablesPath));
   const Engine = require('velocity').Engine;
   const engine = new Engine({template: source});
