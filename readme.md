@@ -15,8 +15,7 @@ but this one allows you to set data source to be injected
 
 ## No data injection
 
-either use directly with `imports` (`require`s) or use with, e.g.,
-`HtmlWebpackPlugin`:
+either use directly with `imports` (`require`s):
 
 ```js
 import 'velocity-injectable-loader!index.vm';
@@ -24,6 +23,17 @@ import 'velocity-injectable-loader!index.vm';
 // or
 
 require('velocity-injectable-loader!index.vm');
+```
+
+or use with, e.g., `HtmlWebpackPlugin`:
+
+```js
+plugins: [
+    new HtmlWebpackPlugin({
+        template: 'velocity-injectable-loader?inject=data.js!./src/index.vm',
+        inject: false
+    })
+]
 ```
 
 ## With data injection
