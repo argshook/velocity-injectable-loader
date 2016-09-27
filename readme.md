@@ -15,15 +15,17 @@ but this one allows you to set data source to be injected
 
 ## No data injection
 
-either use directly with `imports` (`require`s):
+either use directly with `imports` (or `require`s):
 
 ```js
-import 'velocity-injectable-loader!index.vm';
+import template from 'velocity-injectable-loader!index.vm';
 
 // or
 
-require('velocity-injectable-loader!index.vm');
+const template = require('velocity-injectable-loader!index.vm');
 ```
+
+`template` now contains a string of `index.vm`.
 
 or use with, e.g., `HtmlWebpackPlugin`:
 
