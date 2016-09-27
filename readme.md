@@ -7,13 +7,13 @@ somewhat configurable.
 inspired by [velocity-loader](https://github.com/zhongzhi107/velocity-loader)
 but this one allows you to set data source to be injected
 
-# Installation
+## Installation
 
-`npm i velocity-injectable-loader`
+`npm i velocity-injectable-loader --save-dev`
 
-# Usage
+## Usage
 
-## No data injection
+### No data injection
 
 either use directly with `imports` (or `require`s):
 
@@ -38,7 +38,7 @@ plugins: [
 ]
 ```
 
-## With data injection
+### With data injection
 
 when `./velocity.vm` contains:
 
@@ -57,8 +57,8 @@ module.exports = {
 then `./some-file.js`:
 
 ```js
-import injected from 'velocity-injectable-loader?inject=injectables.js!velocity.vm';
-```
+import template from 'velocity-injectable-loader?inject=injectables.js!velocity.vm';
 
-will output `Hello Doggo`.
+console.log(template); // <= "Hello Doggo"
+```
 
