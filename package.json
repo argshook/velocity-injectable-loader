@@ -1,6 +1,6 @@
 {
   "name": "velocity-injectable-loader",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "velocity templates loader with ability to inject data",
   "main": "index.js",
   "dependencies": {
